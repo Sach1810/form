@@ -2,6 +2,8 @@
 <html>
 <head>
   <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
   <title>Registration Form</title>
   <link rel="stylesheet" type="text/css" href="form.css">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -9,9 +11,33 @@
 <body>
  
     <form id="joinUs">
-        <div class=" formFeildContainer"><h1>Join Us</h1></div>
-        <div class="inputLabel">First Name</div>
-        <div class="formFeildContainer"><input id="firstname"></input></div>
+      <div class=" formFeildContainer">
+        <h1>Join Us</h1>
+      </div>
+      <div id="firstName">
+        <div class="inputLabel">
+          First Name
+        </div>
+        <div id="firstNameBox" class="formFeildContainer">
+          <input id="firstNameInput"></input>
+        </div>
+        <div id="firstNameError" class="error">
+        </div>
+      </div>
+
+
+        
+        
+        
+        
+        
+
+
+
+
+
+
+<!-- 
         <div class="inputLabel">Last Name</div>
         <div class="formFeildContainer"><input id="lastname"></input></div>
         <div class="inputLabel">Email</div>
@@ -23,8 +49,8 @@
         <div id="characters" class="inputLabel">Must have 7 characters</div>
         <div id="special" class="inputLabel">Must contain a number or special character</div>
         <div class="inputLabel">Repeat Password</div>
-        <div class="formFeildContainer"><input id="rpassword"></input></div>
-        <div class="formSubmitContainer"><input class="submit" type="submit"></button></div>
+        <div class="formFeildContainer"><input id="rpassword"></input></div> -->
+        <div class="formSubmitContainer"><input class="submit" type="submit" onclick="submitForm();return false"></button></div>
     </form>
 
 
