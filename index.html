@@ -1,46 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Simple Form</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-  </head>
-  <body>
-
-    <div class="formbackground">
-
-      <div class="form">
-        <form name="joinus">
-          <div class="formtag"><h1>Join us!</h1></div>
-          <div class="formtag">First Name:</div>
-          <input type="text" name="firstname">
-          <div class="hidefirst">*Please type your first name!</div>
-          <div class="formtag">Last Name:</div>
-          <input type="text" name="lastname">
-          <div class="hidelast">*Please type your last name!</div>
-          <div class="formtag">Email:</div>
-          <input type="text" name="email">
-          <div class="hideemail">*Please type in a valid email address</div>
-          <div class="formtag">Username</div>
-          <input type="text" name="username">
-          <div class="hideusername">*Please make sure username is at least 5 characters!</div>
-          <div class="formtag">Password:</div>
-          <input id="passwordmain" type="password" name="password">
-          <div class="passwordone">*At least 7 characters</div>
-          <div class="passwordtwo">*Must include a number or special charcter</div>
-          <div class="formtag">Repeat Password:</div>
-          <input  type="password" name="repeatpassword" >
-          <div class="hiderpassword">*Please make sure your passwords match!</div>
-            <input onclick="validateForm();return false" class="submit" type="submit" value="Submit">
-        </form>
-        
-      </div>
-    </div>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700' rel='stylesheet' type='text/css'>
+  <title>Registration Form</title>
+  <link rel="stylesheet" type="text/css" href="form.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+</head>
+<body>
+ 
+    <form id="joinUs">
+        <div class=" formFeildContainer"><h1>Join Us</h1></div>
+        <div class="inputLabel">First Name</div>
+        <div class="formFeildContainer"><input id="firstname"></input></div>
+        <div class="inputLabel">Last Name</div>
+        <div class="formFeildContainer"><input id="lastname"></input></div>
+        <div class="inputLabel">Email</div>
+        <div class="formFeildContainer"><input id="email"></input></div>
+        <div class="inputLabel">Username</div>
+        <div class="formFeildContainer"><input id="username"></input></div>
+        <div class="inputLabel">Password</div>
+        <div class="formFeildContainer"><input id="password"></input></div>
+        <div id="characters" class="inputLabel">Must have 7 characters</div>
+        <div id="special" class="inputLabel">Must contain a number or special character</div>
+        <div class="inputLabel">Repeat Password</div>
+        <div class="formFeildContainer"><input id="rpassword"></input></div>
+        <div class="formSubmitContainer"><input class="submit" type="submit"></button></div>
+    </form>
 
 
 
-  <script src="main.js"></script>
-  </body>
+
+
+ <!--  <div id="formcontainer">
+    <form id="joinUs">
+      <input id="firstname"></input>
+      <input id="lastname"></input>
+      <input id="email"></input>
+      <input id="username"></input>
+      <input id="password"></input>
+      <input id="rpassword"></input>
+      <button>Submit</button>
+    </form>
+  </div> -->
+
+  <script type="text/javascript" src="main.js"></script>
+</body>
 </html>
